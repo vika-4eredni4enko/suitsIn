@@ -1,0 +1,57 @@
+.header
+	position: fixed
+	top: 40px
+	right: 0
+	left: 0
+	z-index: 3
+
+	.logo
+		float: left
+		display: none
+
+	.button
+		float: right
+		text-transform: uppercase
+		cursor: pointer
+		height: 55px
+		width: 120px
+		background: $bg-button
+		color: $white
+		margin: 0
+		padding: 0
+		border: 0
+		outline: none
+		font-weight: 700
+		text-align: center
+		line-height: 55px
+		position: relative
+		overflow: hidden
+
+		p 
+			margin: 0
+			position: relative
+			transition: all ease 1s
+
+		&:hover .shadow 
+			width: 100%
+
+		&:hover p 
+			opacity: 0
+			 
+		&:hover .shadow span 
+			opacity: 1
+
+		.shadow 
+			position: absolute
+			top: 0
+			left: 0
+			height: 55px
+			width: 0
+			background: $bg-button-hover
+			color: $text
+			overflow: hidden
+			transition: all ease .7s
+			
+			span 
+				opacity: 0
+				transition: all ease .7s

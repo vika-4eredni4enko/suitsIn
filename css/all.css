@@ -1,0 +1,481 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+h2, h3, nav {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 50px;
+  width: 190px;
+  background: #272727;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button p {
+  margin: 0;
+  position: relative;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.button:hover .shadow {
+  width: 100%;
+}
+
+.button:hover p {
+  opacity: 0;
+}
+
+.button:hover .shadow span {
+  opacity: 1;
+}
+
+.button .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 0;
+  background: #e0c63e;
+  color: #272727;
+  overflow: hidden;
+  -webkit-transition: all ease .7s;
+  -o-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+.button .shadow span {
+  opacity: 0;
+  -webkit-transition: all ease .7s;
+  -o-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+.container {
+  max-width: 1170px;
+  min-width: 290px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+
+element.style {
+  background: url(img/top-bg.png) no-repeat;
+}
+
+.top-section {
+  position: relative;
+  height: 100vh;
+  background: url(../img/top.jpg) 25% 40% no-repeat;
+  z-index: 1;
+}
+
+.top-section .top-section-video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.top-section .top-section-video video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  background-position: 0 center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.top-section .top-section-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
+  background-position: 50% 0% !important;
+}
+
+.top-section .top-section-caption {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  z-index: 2;
+}
+
+.top-section .top-section-caption .line-text {
+  margin-bottom: 45px;
+}
+
+.top-section .top-section-caption .line-text h2 {
+  font-size: 77px;
+  text-transform: uppercase;
+  color: #272727;
+  line-height: 1.1;
+}
+
+.top-section .top-section-caption .top-section-logo {
+  margin-bottom: 70px;
+}
+
+.menu {
+  position: absolute;
+  top: 55px;
+  right: 305px;
+  z-index: 9;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu a {
+  color: #272727;
+  text-transform: uppercase;
+  padding: 0 15px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  font-weight: 500;
+}
+
+.menu:hover a {
+  opacity: .5;
+}
+
+.menu a:hover {
+  opacity: 1;
+}
+
+.header {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.header .logo {
+  float: left;
+  display: none;
+}
+
+.header .button {
+  float: right;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 55px;
+  width: 120px;
+  background: #272727;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-weight: 700;
+  text-align: center;
+  line-height: 55px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .button p {
+  margin: 0;
+  position: relative;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.header .button:hover .shadow {
+  width: 100%;
+}
+
+.header .button:hover p {
+  opacity: 0;
+}
+
+.header .button:hover .shadow span {
+  opacity: 1;
+}
+
+.header .button .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 0;
+  background: #e0c63e;
+  color: #272727;
+  overflow: hidden;
+  -webkit-transition: all ease .7s;
+  -o-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+.header .button .shadow span {
+  opacity: 0;
+  -webkit-transition: all ease .7s;
+  -o-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+.section-first {
+  padding-top: 80px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #272727;
+}
+
+.section-first .law {
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+.section-first .image-box {
+  float: left;
+  margin-right: 25px;
+  width: 40%;
+}
+
+.section-first .image-box img {
+  -webkit-box-shadow: 10px 40px 80px rgba(147, 149, 152, 0.27);
+          box-shadow: 10px 40px 80px rgba(147, 149, 152, 0.27);
+}
+
+.section-first .box-1 {
+  float: left;
+  margin-right: 40px;
+}
+
+.section-first .box-2 {
+  float: left;
+}
+
+.section-first .advantages-txt {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.section-first .advantages-icon {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.section-first .advantages-icon img {
+  width: 75px;
+  height: 65px;
+}
+
+.section-first .advantages-item {
+  margin-bottom: 40px;
+}
+
+.section-first .heading-top {
+  text-transform: uppercase;
+  opacity: .2;
+  font-size: 20px;
+}
+
+.section-first .heading-title {
+  position: relative;
+  padding-left: 110px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.section-first .heading-title span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 87px;
+  height: 1px;
+  background: #a27726;
+}
+
+.section-first .heading {
+  padding-bottom: 55px;
+}
+
+.section-parallax {
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-parallax .parallax-caption {
+  position: absolute;
+  font-weight: 500;
+  color: #272727;
+  font-family: "Oswald", sans-serif;
+  padding-top: 95px;
+  z-index: 1;
+}
+
+.section-parallax .parallax-caption .line-text {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.2;
+  padding-bottom: 35px;
+}
+
+.section-parallax .parallax-cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+}
+
+.section-parallax .parallax-cont .parall-bg {
+  position: absolute;
+  z-index: 0;
+}
+
+.section-parallax .parallax-cont .parall-img {
+  position: absolute;
+  z-index: 0;
+}
+
+@media (max-width: 1199px) {
+  .section-first .image-box {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+  .section-first .law .advantages-box {
+    margin: 0 auto;
+    display: table;
+  }
+}
+
+@media (max-width: 992px) {
+  .top-section .top-section-image {
+    background: rgba(241, 238, 238, 0.92) !important;
+  }
+  .top-section .top-section-logo {
+    text-align: center;
+  }
+  .top-section .top-section-caption {
+    right: 0;
+    left: 0;
+  }
+  .top-section .top-section-caption .line-text {
+    text-align: center;
+  }
+  .top-section .button {
+    margin: 0 auto;
+  }
+  .section-parallax .parallax-caption {
+    padding-top: 60px;
+  }
+  .section-parallax .parallax-caption .line-text {
+    font-size: 40px;
+  }
+  .menu {
+    right: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .top-section .top-section-logo {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .top-section .top-section-caption .line-text h2 {
+    font-size: 57px;
+  }
+  .section-first .box-1 {
+    float: none;
+  }
+  .section-parallax .parallax-caption {
+    padding-top: 30px;
+  }
+  .section-parallax .parallax-caption .line-text {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-parallax .parallax-caption .line-text {
+    display: none;
+  }
+  .top-section .top-section-caption .line-text h2 {
+    font-size: 45px;
+  }
+  .top-section .top-section-caption .top-section-logo {
+    margin-bottom: 40px;
+  }
+  .section-first .heading-title {
+    font-size: 35px;
+  }
+  .section-first .advantages-txt {
+    font-size: 20px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}

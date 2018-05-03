@@ -1,0 +1,58 @@
+element.style 
+	background: url(img/top-bg.png) no-repeat
+
+.top-section
+	position: relative
+	height: 100vh
+	background: url(../img/top.jpg) 25% 40% no-repeat
+	z-index: 1
+
+	.top-section-video
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+
+		video
+			position: absolute
+			min-width: 100%
+			min-height: 100%
+			width: auto
+			height: auto
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+			background-color: $white
+			background-position: 0 center
+			background-size: cover
+
+	.top-section-image
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 2
+		background-size: cover !important
+		background-position: 50% 0% !important
+
+	.top-section-caption
+		position: absolute
+		right: 15%
+		top: 20%
+		z-index: 2
+
+		.line-text
+			margin-bottom: 45px
+
+			h2
+				font-size: $fs + 61
+				text-transform: uppercase
+				color: $text
+				line-height: 1.1
+				
+		.top-section-logo
+			margin-bottom: 70px
+
