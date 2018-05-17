@@ -168,8 +168,8 @@ element.style {
 .menu {
   position: absolute;
   top: 55px;
-  right: 305px;
   z-index: 9;
+  left: 725px;
 }
 
 .menu ul {
